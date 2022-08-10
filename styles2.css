@@ -1,15 +1,34 @@
+@page {
+	size: 7in 10.5in;
+	/*border:  1px solid red;*/
+	marks: crop;
+	margin-top: .75in;
+	margin-bottom: .75in;
+	margin-inside: .875in;
+	margin-outside:  .875in;
+	padding-top:  .25in;
+	padding-bottom:  .0in;
+}
+
+
+
+
+
+
 @page body {
         @top-left {
 			font-family: "Typer Pro Mono";
-			letter-spacing: -.07em;
+			letter-spacing: -.0425em;
             content: "THE NEKROMANTIKON";
             vertical-align: bottom;
+            padding-bottom:  0;
         } 
         @top-right {
 			font-family: "Typer Pro Mono";
-			letter-spacing: -.07em;
+			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: bottom;
+            padding-bottom:  0;
         }
 
     }
@@ -17,13 +36,13 @@
 @page nohead {
         @top-left {
 			font-family: "Typer Pro Mono";
-			letter-spacing: -.07em;
+			letter-spacing: -.0425em;
             content: "";
             vertical-align: bottom;
         } 
         @top-right {
 			font-family: "Typer Pro Mono";
-			letter-spacing: -.07em;
+			letter-spacing: -.0425em;
             content: "";
             vertical-align: bottom;
         }
@@ -40,7 +59,7 @@
 	page-break-before: always;
 	page: cover;
 	font-family: "Typer Pro Mono";
-	letter-spacing: -.07em;
+	letter-spacing: -.0425em;
 	line-height: 1em;
 }
 
@@ -187,7 +206,8 @@
 	/*font-family: "American Typewriter ITC Pro";*/
 	/*font-family: Courier;*/
 	font-family: "Typer Pro Mono";
-	letter-spacing: -.07em;
+	/*letter-spacing: -.07em;*/
+	letter-spacing: -.0425em;
 	line-height: 1em;
 	/*margin-top: 20px;*/
 	page-break-before: always;
