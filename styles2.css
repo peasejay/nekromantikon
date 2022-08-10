@@ -1,0 +1,218 @@
+@page body {
+        @top-left {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.07em;
+            content: "THE NEKROMANTIKON";
+            vertical-align: bottom;
+        } 
+        @top-right {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.07em;
+            content: counter(page);
+            vertical-align: bottom;
+        }
+
+    }
+
+@page nohead {
+        @top-left {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.07em;
+            content: "";
+            vertical-align: bottom;
+        } 
+        @top-right {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.07em;
+            content: "";
+            vertical-align: bottom;
+        }
+
+    }
+
+
+@page cover {
+	background: #D5EBBD;
+}
+
+
+.cover {
+	page-break-before: always;
+	page: cover;
+	font-family: "Typer Pro Mono";
+	letter-spacing: -.07em;
+	line-height: 1em;
+}
+
+
+.titlepage {
+	counter-reset: page 1;
+}
+
+.title_subtitle {
+	white-space: pre;
+	text-align: justify;
+}
+
+.title_story_title {
+	text-transform: uppercase;
+}
+
+.title_story_author {
+	text-transform: uppercase;
+	font-size: .65em;
+	float: right;
+	margin-top: .45em;
+}
+
+.title_story {
+	display:  inline-block;
+	width: 100%;
+	margin-top:  0;
+	margin-bottom:  0;
+}
+
+.title_story_page {
+	float: right;
+	margin-left: 1em;
+}
+
+/*.underline {
+	border-bottom:  1px solid black;
+	padding-bottom: -5px;
+	margin-bottom:  0;
+}*/
+
+
+.underline {
+	text-decoration: none;
+    position: relative;
+    background-repeat: repeat-x;
+    background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==);
+    background-position: left 15px;
+}
+
+
+.title_story_subhead {
+	font-style: italic;
+	margin-top:  0;
+	margin-bottom:  0;
+	padding-left:  .5in;
+}
+
+.title_story_subhead em {
+	font-style: normal;
+}
+
+.transform-normal {
+	text-transform: capitalize;
+}
+
+.titlepage h1 {
+	text-align:  center;
+}
+
+.titlepage h2 {
+	text-align:  center;
+/*	font-family: "Allisha";*/
+/*	font-family: "Andallan";*/
+	font-family: "Bright Larch PERSONAL USE ONLY";
+}
+
+.titlepage h3 {
+	text-transform: uppercase;
+	font-weight:  bold;
+	margin-top:  4px;
+	margin-bottom:  0;
+}
+
+.title_caps {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: .4em;
+	margin-bottom:  .2em;
+}
+
+.title_caps_small {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .65em;
+	margin-top: .2em;
+	margin-bottom:  .2em;
+}
+
+.title_section_top {
+	display:  block;
+	border-top:  black 2px solid;
+	border-bottom:  black 2px solid;
+	border-bottom-style:  double;
+	border-bottom-width:  5px;
+}
+
+.title_section_top p {
+/*	font-family: "Allisha";*/
+/*	font-family: "Andallan";*/
+	font-family: "Bright Larch PERSONAL USE ONLY";
+	margin-top:  0;
+	margin-bottom: 0;
+	display:  inline-block;
+	width:  100%;
+}
+
+.title_section_bottom {
+	display:  block;
+	border-top:  black 2px solid;
+	border-top-style:  double;
+	border-top-width:  5px;
+	border-bottom:  black 2px solid;
+}
+
+.title_section_bottom p {
+	margin-top:  0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left:  2em;
+	padding-right:  2em;
+	/*border:  1px solid red;*/
+	display:  inline-block;
+	width:  92.15%;
+	font-size: .9em;
+	text-align:  justify;
+	text-align-last: justify;
+}
+
+
+.page {
+	/*font-family: "American Typewriter ITC Pro";*/
+	/*font-family: Courier;*/
+	font-family: "Typer Pro Mono";
+	letter-spacing: -.07em;
+	line-height: 1em;
+	/*margin-top: 20px;*/
+	page-break-before: always;
+	page: body;
+}
+
+.titlepage {
+	counter-reset: page 1;
+	page: nohead;
+}
+
+
+.page>p.text_block_name {
+	color: red;
+	margin-top:.2in; margin-bottom:.2in;
+}
+.page>p {
+	white-space: pre;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.thin {display: inline-block; width: .23em;}
+
+.page u {
+	text-decoration-skip-ink: none;
+	/* text-decoration-thickness: 2px; */
+}
