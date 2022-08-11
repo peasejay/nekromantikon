@@ -6,8 +6,8 @@
 	margin-bottom: .75in;
 	margin-inside: .875in;
 	margin-outside:  .875in;
-	padding-top:  .25in;
-	padding-bottom:  .0in;
+	padding-top:  .125in;
+	padding-bottom:  .125in;
 }
 
 
@@ -15,7 +15,7 @@
 
 
 
-@page body {
+@page body:left {
         @top-left {
 			font-family: "Typer Pro Mono";
 			letter-spacing: -.0425em;
@@ -32,6 +32,71 @@
         }
 
     }
+@page body:right {
+        @top-left {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+			text-transform:  uppercase;
+            content: string(doctitle);
+            vertical-align: bottom;
+            padding-bottom:  0;
+        } 
+        @top-right {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: counter(page);
+            vertical-align: bottom;
+            padding-bottom:  0;
+        }
+
+    }
+
+
+@page pagenumonly:left {
+        @top-left {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: counter(page);
+            vertical-align: bottom;
+            padding-bottom:  0;
+
+        } 
+
+    }
+@page pagenumonly:right {
+        @top-right {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: counter(page);
+            vertical-align: bottom;
+            padding-bottom:  0;
+        }
+
+    }
+
+@page bottompage:left {
+        @bottom-left {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: counter(page);
+            vertical-align: top;
+            padding-top:  0;
+
+        } 
+
+    }
+@page bottompage:right {
+        @bottom-right {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: counter(page);
+            vertical-align: top;
+            padding-top:  0;
+        }
+
+    }
+
+
 
 @page nohead {
         @top-left {
@@ -62,6 +127,7 @@
 	letter-spacing: -.0425em;
 	line-height: 1em;
 }
+
 
 
 .titlepage {
@@ -128,10 +194,12 @@
 }
 
 .titlepage h1 {
+	font-size:  4pt;
 	text-align:  center;
 }
 
 .titlepage h2 {
+	font-size: 2pt;
 	text-align:  center;
 /*	font-family: "Allisha";*/
 /*	font-family: "Andallan";*/
@@ -196,7 +264,7 @@
 	/*border:  1px solid red;*/
 	display:  inline-block;
 	width:  92.15%;
-	font-size: .9em;
+	font-size: .2em;
 	text-align:  justify;
 	text-align-last: justify;
 }
@@ -214,23 +282,72 @@
 	page: body;
 }
 
+.nohead {
+	page: nohead;
+}
+
+.pagenumonly {
+	page: pagenumonly;
+}
+
+.bottompage {
+	page: bottompage;
+}
+
+
+
 .titlepage {
 	counter-reset: page 1;
 	page: nohead;
 }
 
 
-.page>p.text_block_name {
+.page p.text_block_name {
 	color: red;
 	margin-top:.2in; margin-bottom:.2in;
 }
-.page>p {
+.page p {
 	white-space: pre;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-.thin {display: inline-block; width: .24em;}
+.page h1.title {
+	text-transform:  uppercase;
+	string-set: doctitle content();
+	text-align:  center;
+	font-family: "Times New Roman";
+}
+
+h2.author {
+	text-align:  center;
+	font-family: "Times New Roman";
+}
+
+h2.subhead {
+	text-align:  center;
+	font-size: 14pt;
+	font-family: "Times New Roman";
+}
+
+.illustrated {
+	text-align:  center;
+	font-style:  italic;
+	font-family: "Times New Roman";
+}
+
+.alignbottom {
+	position: fixed;
+    bottom: 0;
+}
+
+
+.thin {
+    display: inline-block;
+    /* this width value may need to be adjusted to make the MB "half-spaced"       */
+    /* justification work - tweak this value until line endings seem to match up.  */
+    width: .24em;
+}
 
 .page u {
 	text-decoration-skip-ink: none;
