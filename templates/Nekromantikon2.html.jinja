@@ -8,25 +8,33 @@
 <body>
 
 <div id="cover" class="cover">
-Nekromantikon 2
+<img style="display: block; margin: 0 auto 0 auto; width: 100%" src="images/cover_logo.svg" />
+<h2>Amateur Magazine of Weird and Fantasy</h2>
+
+<img style="display: block; margin: 0 auto 0 auto; width: 100%" src="images/cover_both.svg" />
+<p>Volume 1, Number 2<span style="float:  right">Summer 1950</span></p>
 </div>
 
 <div id="coverback" class="cover">
 </div>
 
 <div class="titlepage">
-<h1 style="margin-top: 0">The Nekromantikon</h1>
+<img style="position: fixed; top: 0; left: 0; height: .5in" src="images/witch.svg" />
+<img style="position: fixed; top: 0; right: 0; height: .5in" src="images/witch.svg" />
+
+
+<img style="display: block; margin: .5in auto 0 auto; width: 79%" src="images/title_logo.svg" />
 <h2>Amateur Magazine of Weird and Fantasy</h2>
 
 <div class="title_section_top">
-<p>Summer 1950 <span style="float: right;">25¢ A Copy — 1 Shilling in U.K.</span></p>
-<p>Manly Banister, Editor-Publisher <span style="float: right;">Member N.F.F.F.</span></p>
+<p>Summer 1950 <span style="float: right;">25¢ A Copy — 1 Shilling in U. K.</span></p>
+<p>Manly Banister, Editor-Publisher <span style="float: right;">Member N. F. F. F.</span></p>
 </div>
 
 <p class="title_caps">Cover by Ralph Rayburn Phillips</p>
 <p class="title_caps_small">Interior Illustrations by Banister, Phillips, Dunn</p>
 
-<h3>Stories</h3>
+<h3 style="margin-top: .3em;">Stories</h3>
 <p class="title_story">
 <span class="title_story_title">Fen-Wer</span>
 <span class="title_story_page">4</span>
@@ -69,14 +77,14 @@ Nekromantikon 2
 </p>
 <p class="title_story_subhead">A discerning fellow, who could see through <em>almost</em> everybody.</p>
 
-<h3>Article</h3>
+<h3 style="margin-top: .6em;">Article</h3>
 <p class="title_story">
 <span class="title_story_title">Rainbow City of Antarctica</span>
 <span class="title_story_page">27</span>
 <span class="title_story_author">C. H. Spaulding</span>
 </p>
 
-<h3>Verse</h3>
+<h3 style="margin-top: .4em;">Verse</h3>
 <p class="title_story">
 <span class="title_story_title">Moon-Calf</span>
 <span class="title_story_page">19</span>
@@ -112,20 +120,20 @@ Nekromantikon 2
 <span class="title_story_author">Tom Carter — Inside Back Cover</span>
 </p>
 
-<h3>Feature</h3>
+<h3 style="margin-top: .6em;">Feature</h3>
 <p class="title_story">
 <span class="title_story_title">Ralph Rayburn Phillips, <span class="transform-normal">Ultra-Weird Artist</span>
 <span class="title_story_page">3</span>
 </p>
 
-<p style="text-align: center">Autumn issue out about August 1st.</p>
+<p style="text-align: center; font-size: 12pt;">Autumn issue out about August 1st.</p>
 
 <div class="title_section_bottom">
 <p><span style="text-align: justify">Published quarterly by <em>THE NEKROMANTIKON</em>, 1905 Spruce Avenue, Kansas City 1, Missouri. Single</span></p>
 <p>copy 25 cents. Year subscription (4 issues) $1.00. No payment is made for literary material or artwork</p>
 <p>beyond a free copy of the issue containing the creative work. Please enclose stamped, self-addressed en-</p>
 <p>velope with material submitted. Copyright 1950 by <em>THE NEKROMANTIKON</em>. All rights reserved to the</p>
-<p style="text-align-last: left;">individual authors. <span style="float:right;">Printed in U. S. A.</span></p>
+<p style="text-align-last: left;margin-bottom: 5px;">individual authors. <span style="float:right;">Printed in U. S. A.</span></p>
 </div>
 
 
@@ -437,4 +445,45 @@ UL-UL
 
 
 </body>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    height="0"
+    width="0"
+>
+    <defs>
+        <filter id="squiggle">
+            <feTurbulence
+                type="fractalNoise"
+                id="turbulence"
+                baseFrequency=".05"
+                numOctaves="4"
+            />
+            <feDisplacementMap
+                id="displacement"
+                in="SourceGraphic"
+                scale="40"
+            />
+        </filter>
+    </defs>
+</svg>
+<svg>
+  <filter id='noiseFilter'>
+    <feTurbulence 
+      type='fractalNoise' 
+      baseFrequency='6.29' 
+      numOctaves='6' 
+      stitchTiles='stitch'/>
+  </filter>
+</svg>
+<svg>
+    <filter id="erode">
+        <feMorphology operator="erode" radius="20"></feMorphology>
+    </filter>
+</svg>
+<svg>
+    <filter id="dilate">
+        <feMorphology operator="dilate" radius="20"></feMorphology>
+    </filter>
+</svg>
 </html>

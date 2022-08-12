@@ -1,3 +1,9 @@
+
+img {
+    /*filter: url(#squiggle);*/
+    /*filter: url(#noiseFilter);*/
+}
+
 @page {
 	size: 7in 10.5in;
 	/*border:  1px solid red;*/
@@ -126,6 +132,17 @@
 	font-family: "Typer Pro Mono";
 	letter-spacing: -.0425em;
 	line-height: 1em;
+	color:  #183512;
+}
+
+.cover p {
+	margin:  .125in auto 0 .1in;
+	padding: 0 0;
+	display:  inline-block;
+	/*font-family:  "FrederickText";*/
+	/*border:  1px solid red;*/
+	font-size:  18pt;
+	width:  96.5%;
 }
 
 
@@ -145,7 +162,7 @@
 
 .title_story_author {
 	text-transform: uppercase;
-	font-size: .65em;
+	font-size: 8pt;
 	float: right;
 	margin-top: .45em;
 }
@@ -170,7 +187,7 @@
 
 
 .underline {
-	text-decoration: none;
+    text-decoration: none;
     position: relative;
     background-repeat: repeat-x;
     background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==);
@@ -183,6 +200,7 @@
 	margin-top:  0;
 	margin-bottom:  0;
 	padding-left:  .5in;
+	font-size: 10pt;
 }
 
 .title_story_subhead em {
@@ -194,16 +212,31 @@
 }
 
 .titlepage h1 {
-	font-size:  4pt;
+	font-size:  12pt;
 	text-align:  center;
+	margin-top:  .2em;
+	margin-bottom:  .2em;
+}
+
+
+.cover h2 {
+	font-size: 18pt;
+	text-align:  center;
+	color:  #183512;
+	font-family: "Lonsdale";
+	/*filter: url(#dilate);*/
+	font-weight:  100;
+	margin-top:  .2em;
+	margin-bottom:  .5em;
 }
 
 .titlepage h2 {
-	font-size: 2pt;
+	font-size: 18pt;
 	text-align:  center;
-/*	font-family: "Allisha";*/
-/*	font-family: "Andallan";*/
-	font-family: "Bright Larch PERSONAL USE ONLY";
+	font-family: "Lonsdale";
+	font-weight:  100;
+	margin-top:  .2em;
+	margin-bottom:  .2em;
 }
 
 .titlepage h3 {
@@ -211,11 +244,13 @@
 	font-weight:  bold;
 	margin-top:  4px;
 	margin-bottom:  0;
+	font-family: "Bodoni MT Std";
 }
 
 .title_caps {
 	text-transform: uppercase;
 	text-align: center;
+	font-size:  9pt;
 	margin-top: .4em;
 	margin-bottom:  .2em;
 }
@@ -223,7 +258,7 @@
 .title_caps_small {
 	text-transform: uppercase;
 	text-align: center;
-	font-size: .65em;
+	font-size:  6pt;
 	margin-top: .2em;
 	margin-bottom:  .2em;
 }
@@ -237,9 +272,9 @@
 }
 
 .title_section_top p {
-/*	font-family: "Allisha";*/
-/*	font-family: "Andallan";*/
-	font-family: "Bright Larch PERSONAL USE ONLY";
+	font-family: "Lonsdale";
+	font-weight:  100;
+	font-size: 12pt;
 	margin-top:  0;
 	margin-bottom: 0;
 	display:  inline-block;
@@ -252,6 +287,7 @@
 	border-top-style:  double;
 	border-top-width:  5px;
 	border-bottom:  black 2px solid;
+	line-height:  8pt;
 }
 
 .title_section_bottom p {
@@ -259,12 +295,12 @@
 	margin-bottom: 0;
 	padding-top: 0;
 	padding-bottom: 0;
-	padding-left:  2em;
-	padding-right:  2em;
+	padding-left:  .25in;
+	padding-right: .25in;
 	/*border:  1px solid red;*/
+	width: 90%;
 	display:  inline-block;
-	width:  92.15%;
-	font-size: .2em;
+	font-size: 8pt;
 	text-align:  justify;
 	text-align-last: justify;
 }
@@ -358,3 +394,21 @@ h2.subhead {
 	border:  1px solid black;
 	width:  100%;
 }
+
+.fen_wer>.title {
+	display: none;
+}
+
+.fen_wer>.author {
+	font-family: "Bodoni MT Std";
+	font-size: 32pt;
+	margin-bottom: .75in;
+}
+
+.fen_wer>.subhead {
+	font-family: "Bodoni MT Std";
+	font-size: 16pt;
+	line-height:  1em;
+	margin-bottom: .5in;
+}
+
