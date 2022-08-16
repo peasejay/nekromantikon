@@ -4,10 +4,16 @@ img {
     /*filter: url(#noiseFilter);*/
 }
 
+@font-face {
+      font-family: "Hadriano Stone Cut";
+      src: prince-lookup("HadrianoStoneCut"),
+           url("/Users/jpease/Library/Fonts/LTCHdrStc-Reg.otf") format("opentype");
+    }
+
 @page {
 	size: 7in 10.5in;
 	/*border:  1px solid red;*/
-	marks: crop;
+	/*marks: crop;*/
 	margin-top: .75in;
 	margin-bottom: .75in;
 	margin-inside: .875in;
@@ -17,7 +23,10 @@ img {
 }
 
 
-
+@page extraspace {
+	margin-bottom: 0;
+	padding-bottom:  0;
+}
 
 
 
@@ -44,6 +53,43 @@ img {
 			letter-spacing: -.0425em;
 			text-transform:  uppercase;
             content: string(doctitle);
+            vertical-align: bottom;
+            padding-bottom:  0;
+        } 
+        @top-right {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: counter(page);
+            vertical-align: bottom;
+            padding-bottom:  0;
+        }
+
+    }
+
+
+@page reverse:left {
+        @top-left {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: string(doctitle);
+            vertical-align: bottom;
+            padding-bottom:  0;
+        } 
+        @top-right {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+            content: counter(page);
+            vertical-align: bottom;
+            padding-bottom:  0;
+        }
+
+    }
+@page reverse:right {
+        @top-left {
+			font-family: "Typer Pro Mono";
+			letter-spacing: -.0425em;
+			text-transform:  uppercase;
+            content: "THE NEKROMANTIKON";
             vertical-align: bottom;
             padding-bottom:  0;
         } 
@@ -135,11 +181,11 @@ img {
 	color:  #183512;
 }
 
-.cover p {
+.cover_volume {
 	margin:  .125in auto 0 .1in;
 	padding: 0 0;
 	display:  inline-block;
-	/*font-family:  "FrederickText";*/
+	font-family:  "Goudy Text MT Std";
 	/*border:  1px solid red;*/
 	font-size:  18pt;
 	width:  96.5%;
@@ -331,6 +377,11 @@ img {
 }
 
 
+.extraspace {
+	page: extraspace;
+}
+
+
 
 .titlepage {
 	counter-reset: page 1;
@@ -370,6 +421,21 @@ h2.subhead {
 	text-align:  center;
 	font-style:  italic;
 	font-family: "Times New Roman";
+	font-size:  9pt;
+	margin:  0;
+}
+
+
+.illustrated_right {
+	font-style:  italic;
+	font-family: "Times New Roman";
+	font-size:  6pt;
+	margin:  0;
+	position:  relative;
+	font-weight:  normal;
+	word-spacing: 25px;
+	top: -.125in;
+	left:  4in;
 }
 
 .alignbottom {
@@ -395,6 +461,19 @@ h2.subhead {
 	width:  100%;
 }
 
+.caption {
+	font-family: "Times New Roman";
+	text-align:  center;
+	font-size:  12pt;
+	margin-top:  5em;
+}
+
+
+
+.reverse {
+	page: reverse;
+}
+
 .fen_wer>.title {
 	display: none;
 }
@@ -412,3 +491,309 @@ h2.subhead {
 	margin-bottom: .5in;
 }
 
+.doomsroad h1.title {
+	margin-top: 1in;
+	font-family: "Hadriano Stone Cut";
+	letter-spacing:  .1em;
+	font-size: 32pt;
+	margin-bottom: .75in;
+}
+
+.doomsroad .author {
+	font-family: "Archive American Shadow";
+	font-size: 20pt;
+	margin-bottom: 1in;
+	letter-spacing:  .1em;
+}
+
+.doomsroad .subhead {
+	font-family: "Times New Roman";
+	font-size: 12pt;
+	font-weight:  normal;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom: 1in;
+}
+
+div.rainbowcities{
+	padding-top: .8in;
+}
+
+.rainbowcities p {
+	line-height:  .75em;
+}
+
+.rainbowcity h1.title {
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin-top: .2in;
+	line-height:  1em;
+	font-family: "Delphian";
+	letter-spacing:  .1em;
+	font-size: 32pt;
+	margin-bottom: .75in;
+}
+
+
+.rainbowcity .author {
+	font-family: "Archive American Shadow";
+	font-size: 16pt;
+	margin-bottom: .75in;
+	letter-spacing:  .1em;
+}
+
+.rainbowcity .subhead {
+	font-family: "Times New Roman";
+	font-size: 14pt;
+	font-weight:  normal;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom: 1in;
+}
+
+
+
+div.rainbow_city_postscript {
+	border:  1px solid black;
+	width:  100%;
+	padding: .02in 0 .02in 0;
+}
+
+.rainbow_city_postscript p {
+	margin-left:  .3in;
+}
+
+.mrhodgett h1.title {
+	display: block;
+	font-family: "LTC Hadriano";
+	/*font-face:  "Regular";*/
+	width: 100%;
+	font-size: 21pt;
+	text-align:  left;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom:  .75in;
+}
+
+.mrhodgett .author {
+	font-family: "Hadriano Stone Cut";
+	font-size: 21pt;
+	margin-bottom: .1in;
+	letter-spacing:  .03em;
+	text-transform:  uppercase;
+}
+
+div.innsmouth_content {
+	position: fixed;
+	top: 1in;
+	left: .25in;
+}
+
+.rrp_postscript {
+	display:  block;
+	width: 100%;
+	padding:  0;
+}
+
+.rrp_postscript img {
+	display:  block;
+	margin: 0 auto 0 auto;
+	width: 75%;
+}
+
+.rrp_postscript p {
+	text-align:  center;
+  	font-family: "Times New Roman";
+	font-size: 12pt;
+	line-height:  1.1em;
+	margin:  .1em;
+	letter-spacing:  .02em;
+}
+
+
+.rrp_postscript p.bigger {
+  	font-family: "Bodoni MT Std";
+	font-size: 14pt;
+	line-height:  1.1em;
+	letter-spacing:  .02em;
+}
+
+.innsmouth .author {
+	font-family: "Goudy Text MT Std";
+	text-transform:  none;
+	font-size: 16pt;
+	margin-bottom: .1in;
+	letter-spacing:  .1em;
+}
+
+.innsmouth_content p {
+  	font-family: "Times New Roman";
+	font-size: 11pt;
+	white-space: pre;
+	margin-bottom: 2em;
+	letter-spacing:  .07em;
+	line-height:  1.3em;
+}
+
+
+.innsmouth_content p.stanza::first-letter {
+  	font-family: "Times New Roman";
+	font-size: 18pt;
+}
+
+.innsmouth_content p.emstanza {
+	/*font-style: italic;*/
+}
+
+
+.houseofshadows h1.title {
+	display: none;
+	text-transform: uppercase;
+}
+
+.houseofshadows .author {
+	font-family: "Archive American Shadow";
+	font-size: 16pt;
+	margin-bottom: .1in;
+	letter-spacing:  .1em;
+}
+
+.houseofshadows .subhead {
+	font-family: "Times New Roman";
+	font-size: 14pt;
+	font-weight:  normal;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom: 1in;
+}
+
+
+div.house_of_shadows_postscript {
+	display: block;
+	margin:  0 auto;
+	border:  1px dotted black;
+	width:  95%;
+	padding: .02in 0 .02in 0;
+}
+
+.house_of_shadows_postscript p {
+	width:  100%;
+	margin-left:  .5in;
+}
+
+
+.tallterriblewomen h1.title {
+	text-transform:  none;
+	text-align:  center;
+	font-family: "Lonsdale";
+	font-size: 18pt;
+	margin-bottom: .1in;
+	letter-spacing:  .03em;
+}
+
+.tallterriblewomen .author {
+	font-family: "Lonsdale";
+	text-transform:  none;
+	font-size: 14pt;
+	margin-bottom: .2in;
+	letter-spacing:  .01em;
+}
+
+.tallterriblewomen .subhead {
+	font-family: "Times New Roman";
+	font-size: 14pt;
+	font-weight:  normal;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom: .1in;
+}
+
+.tallterriblewomen p {
+	margin-left: 1.4in;
+	font-family: "Times New Roman";
+	font-size: 10pt;
+	line-height:  1.4em;
+	letter-spacing:  .05em;
+}
+
+
+.metamorphosis h1.title {
+	text-align:  center;
+	font-family: "Bodoni MT Std";;
+	font-size: 22pt;
+	margin-bottom: .1in;
+	letter-spacing:  .05em;
+}
+
+.metamorphosis .author {
+	font-family: "Bodoni MT Std";
+	font-size: 14pt;
+	margin-bottom: .1in;
+	letter-spacing:  .05em;
+}
+
+.metamorphosis .subhead {
+	font-family: "Times New Roman";
+	font-size: 10pt;
+	font-weight:  normal;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom: .1in;
+}
+
+.hauntedstreet h1.title {
+	font-family: "Archive American Shadow";
+	text-align:  center;
+	letter-spacing:  .03em;
+	font-size: 14pt;
+	margin-bottom: .1in;
+}
+
+.hauntedstreet .author {
+	font-family: "Lonsdale";
+	text-transform:  none;
+	font-size: 10pt;
+	margin-bottom: .75in;
+	letter-spacing:  .1em;
+}
+
+.hauntedstreet .subhead {
+	font-family: "Times New Roman";
+	font-size: 14pt;
+	font-weight:  normal;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom: .1in;
+}
+
+.hauntedstreet p {
+	font-family: "Times New Roman";
+	font-size: 10pt;
+	letter-spacing:  .03em;
+	line-height:  1.2em;
+	margin-left:  1in;
+}
+
+.oculus h1.title {
+	text-align:  center;
+	font-family: "Bodoni MT Std";;
+	font-size: 22pt;
+	margin-bottom: .1in;
+}
+
+.oculus .author {
+	font-family: "Bodoni MT Std";
+	font-size: 14pt;
+	margin-bottom: .1in;
+	letter-spacing:  .1em;
+}
+
+.oculus .subhead {
+	font-family: "Bodoni MT Std";
+	font-size: 14pt;
+	font-weight:  normal;
+	line-height:  1.2em;
+	letter-spacing:  .03em;
+	margin-bottom: .1in;
+}

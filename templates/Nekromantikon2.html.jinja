@@ -8,11 +8,11 @@
 <body>
 
 <div id="cover" class="cover">
-<img style="display: block; margin: 0 auto 0 auto; width: 100%" src="images/cover_logo.svg" />
+<img style="display: block; margin: 0 auto 0 auto; width: 6in; position:relative; left:-.38in;" src="images/cover_logo.svg" />
 <h2>Amateur Magazine of Weird and Fantasy</h2>
 
 <img style="display: block; margin: 0 auto 0 auto; width: 100%" src="images/cover_both.svg" />
-<p>Volume 1, Number 2<span style="float:  right">Summer 1950</span></p>
+<p class="cover_volume">Volume 1, Number 2<span style="float:  right">Summer 1950</span></p>
 </div>
 
 <div id="coverback" class="cover">
@@ -150,6 +150,7 @@
 
 
 <div class="page bottompage fen_wer">
+<img src="source/fen_wer_title2.svg" style="width: 105%; position: relative; left:-.1in;" />
 <h1 class="title">Fen-Wer</h1>
 <h2 class="author">By Manly Banister</h2>
 <h2 class="subhead">What loathsome, evil Thing<br />dwelt in the mire of that ghastly fen?</h2>
@@ -162,7 +163,8 @@
 
 
 <div class="page nohead">
-Frog picture
+<img src="source/bigfrog.svg" style="width: 105%; position: relative; left:-.1in;" />
+<p class="caption"><em>Something</em> rose up out of the water—</p>
 </div>
 
 <div class="page">
@@ -178,7 +180,13 @@ Frog picture
 </div>
 
 <div class="page">
+<div style="display: block; width:48%; float:left; border: 0px solid blue;">
 {{ text_blocks['fen_wer_9']['content'] }}
+</div>
+<div style="display: block; width:50%; position:fixed; right:0; border: 0px solid red;">
+<img src="source/linda.svg" style="width:100%" />
+<p class="caption">Linda stopped her ears<br />against the din.</p>
+</div>
 </div>
 
 <div class="page">
@@ -194,6 +202,10 @@ Frog picture
 </div>
 
 <div class="page">
+<div style="position: fixed; left: -.25in;">
+<img src="source/logan.svg" style="width:102%;" />
+<p class="caption">Logan struggled back through giant cattails.</p>
+</div>
 <div class="alignbottom">
 {{ text_blocks['fen_wer_13']['content'] }}
 </div>
@@ -224,7 +236,7 @@ Frog picture
 </div>
 
 <div class="page nohead">
-Doomsroad picture
+<img src="source/doomsroad.svg" style="width: 106%; position: fixed; left:-.2in; top:.2in;" />
 </div>
 
 
@@ -255,12 +267,13 @@ Doomsroad picture
 {{ text_blocks['doomsroad_25']['content'] }}
 </div>
 
-<div class="page">
+<div class="page nohead rainbowcities">
 {{ text_blocks['rainbow_cities_26']['content'] }}
 </div>
 
 <div class="page bottompage rainbowcity">
-<h1 class="title">Rainbow City Of Antarctica</h1>
+<img src="source/rainbowcity.svg" style="width: 105%; position: relative; left:-.1in;" />
+<h1 class="title">Rainbow City <br /><span style="position: fixed; right: 0;">Of Antarctica</span></h1>
 <h2 class="author">By C. H. Spaulding</h2>
 <p class="illustrated">Illustrated by Ralph Rayburn Phillips</h2>
 
@@ -282,13 +295,15 @@ Doomsroad picture
 <div class="page">
 {{ text_blocks['rainbow_city_30']['content'] }}
 
-<div class="alignbottom postscript">
+<div class="alignbottom rainbow_city_postscript">
 {{ text_blocks['rainbow_city_postscript_30']['content'] }}
 </div>
 </div>
 
 <div class="page bottompage mrhodgett">
-<h1 class="title">Mr. Hodgett's Quick Conversion</h1>
+<img src="source/mrhodgett.svg" style="width: 105%; position: relative; left:-.1in;" />
+<p class="illustrated_right">Dry Brush by Banister</p>
+<h1 class="title">Mr. Hodgett's <br /><span style="position: fixed; right: 0;">Quick Conversion</span></h1>
 <h2 class="author">By Battell Loomis</h2>
 
 <div class="alignbottom">
@@ -301,56 +316,111 @@ Doomsroad picture
 
 <div class="page">
 {{ text_blocks['mr_hodgett_33']['content'] }}
+<div class="alignbottom rrp_postscript">
+<img src="source/rrp.svg"/>
+<p class="bigger">Positively the Most Macabre<br />and World's Weirdest Art!</p>
+<p class="bigger">The Strangest Art of<br />MYSTERY & HORROR!</p>
+<p>Reproductions and Originals and Reasonable Prices.</p>
+<p>Ralph Rayburn Phillips, 1507 SW 12th, Portland 1, Oreg.</p>
+</div>
 </div>
 
 <div class="page nohead innsmouth">
-Innsmouth Title Page
+<img src="source/innsmouth_title.svg" style="width: 60%;" />
+<h1 class="title">Innsmouth</h1>
+<h1 class="title">Dread City By The Sea</h1>
+<h2 class="author">By R. Flavie Carson</h2>
+<p class="illustrated">Illustrated by Ralph Rayburn Phillips</h2>
 </div>
 
 <div class="page nohead innsmouth">
-Innsmouth Poem
+<img src="source/innsmouth_content.svg" style="width: 120%;" />
+<div class="innsmouth_content">
+
+<p class="stanza">There was a city in a by-gone age
+Built sturdily on sea-lashed, rocky shores,
+A city deeply steeped in ancient lores,
+Where dwelt the crone, the wizard, and the sage.</p>
+
+<p class="stanza">The city prospered for a time, until
+The fisherman caught more than a simple fish.
+And wives were wont to brew a stranger dish
+Than browned corn cake and mellow, bubbling ale.</p>
+
+<p class="stanza">The change came slowly, and there's none to to tell
+The date it started or the reason why,
+And strnage it was that the city lie
+Defenseless 'neath some curious, unknown spell.</p>
+
+<p class="stanza">But recently there has been brought to light,
+A tattered remnant of a diary page,
+Aword of reference in that distant age,
+Written by one that knew wrong from right—</p>
+
+<p class="emstanza">("<em>The blight is strange to see, and terror blasts
+Forth from the heart of every citizen,
+As ghost-like creatures, pale and wan and thin,
+Slip through the darkly crooked, narrow streets.</em>")</p>
+
+<p class="stanza">Tis said that Innsmouth still exists today,
+And though its name is changed to modern guise,
+The night time passer-by still feels the eyes
+Of ghostly creatures, flailing hands of clay.</p>
+
+<p class="stanza">And ever and anon, as the night draws near,
+The home-bound shudder from an ancient fear.</p>
+
+</div>
 </div>
 
-<div class="page houseofshadows">
+<div class="page nohead houseofshadows">
 <h1 class="title">The House Of Shadows</h1>
 <h2 class="author">By Herman Stowell King</h2>
+<img src="source/houseofshadows.svg" style="width: 100%; position: relative; left:-.1in;" />
+<p class="illustrated">Illustrated by Ralph Rayburn Phillips</h2>
 </div>
 
 
-<div class="page">
+<div class="page reverse">
 {{ text_blocks['house_of_shadows_37']['content'] }}
 </div>
 
-<div class="page">
+<div class="page reverse">
 {{ text_blocks['house_of_shadows_38']['content'] }}
 </div>
 
-<div class="page">
+<div class="page reverse">
 {{ text_blocks['house_of_shadows_39']['content'] }}
 </div>
 
-<div class="page">
+<div class="page reverse">
 {{ text_blocks['house_of_shadows_40']['content'] }}
 </div>
 
-<div class="page">
+<div class="page reverse">
 {{ text_blocks['house_of_shadows_41']['content'] }}
 </div>
 
-<div class="page">
+<div class="page reverse">
 {{ text_blocks['house_of_shadows_42']['content'] }}
 
-<div class="alignbottom postscript">
+<div class="alignbottom house_of_shadows_postscript">
 {{ text_blocks['house_of_shadows_postscript_42']['content'] }}
 </div>
 </div>
 
 
-<div class="page nohead terriblewoman">
-The Tall Terrible Woman
+<div class="page nohead extraspace tallterriblewomen">
+<img src="source/tallterriblewomen.svg" style="width: 105%; position: relative; left:-.1in;" />
+<p class="illustrated_right">Pen and Ink by Banister</h2>
+<h1 class="title">The Tall Terrible Women</h1>
+<h2 class="author">By Lilith Lorraine</h2>
+{{ text_blocks['tall_terrible_women_43']['content'] }}
 </div>
 
 <div class="page metamorphosis">
+<img src="source/metamorphosis.svg" style="width: 105%; position: relative; left:-.2in;" />
+<p class="illustrated_right">Pen and Ink by John Dunn</h2>
 <h1 class="title">Metamorphosis</h1>
 <h2 class="author">BY J. A. McKEE</h2>
 <h2 class="subhead">What mysterious force linked these predators, wild and civilized?</h2>
@@ -390,20 +460,24 @@ The Tall Terrible Woman
 </div>
 
 
-<div class="page hauntedstreet">
+<div class="page nohead hauntedstreet">
+<img src="source/hauntedstreet.svg" style="width: 105%; position: relative; left:-.2in;" />
+<p class="illustrated_right">Dry Brush by Banister</p>
 <h1 class="title">The Haunted Street</h1>
 <h2 class="author">By Astara Zimmer Bradley</h2>
 
-<div class="alignbottom">
 {{ text_blocks['the_haunted_street_51']['content'] }}
-</div>
+
 </div>
 
 
-<div class="page oculus">
+<div class="page nohead oculus">
 <h1 class="title">Oculus Penetrans</h1>
 <h2 class="author">By M. Houston</h2>
 <h2 class="subhead">He was granted one wish. . .in a most astonishing way!</h2>
+<img src="source/oculus.svg" style="width: 105%; position: relative; left:-.2in;" />
+<p class="illustrated">Illustrated by Banister</p>
+<p class="caption">All I could see was her jaw-bone going up and down and up and down.</p>
 </div>
 
 
