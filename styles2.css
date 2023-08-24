@@ -11,15 +11,16 @@ img {
     }
 
 @page {
-	size: 7in 10.5in;
-	/*border:  1px solid red;*/
-	/*marks: crop;*/
-	margin-top: .75in;
-	margin-bottom: .75in;
-	margin-inside: .875in;
-	margin-outside:  .875in;
-	padding-top:  .125in;
-	padding-bottom:  .125in;
+	size: 7.375in 11in;
+	/*border:  1px solid dimgray;
+	marks: crop;
+	-prince-mark-offset: 0;*/
+	margin-top: .877in;
+	margin-bottom: 1.4in;
+	margin-inside: .845in;
+	margin-outside:  1in;
+	/*padding-top:  .125in;
+	padding-bottom:  .125in;*/
 }
 
 
@@ -36,14 +37,15 @@ img {
 			letter-spacing: -.0425em;
             content: "THE NEKROMANTIKON";
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
         } 
         @top-right {
 			font-family: "Typer Pro Mono";
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
+            padding-right:  .275in;
         }
 
     }
@@ -54,14 +56,15 @@ img {
 			text-transform:  uppercase;
             content: string(doctitle);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
         } 
         @top-right {
 			font-family: "Typer Pro Mono";
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
+            padding-right:  .275in;
         }
 
     }
@@ -73,14 +76,15 @@ img {
 			letter-spacing: -.0425em;
             content: string(doctitle);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
         } 
         @top-right {
 			font-family: "Typer Pro Mono";
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
+            padding-right:  .275in;
         }
 
     }
@@ -91,14 +95,15 @@ img {
 			text-transform:  uppercase;
             content: "THE NEKROMANTIKON";
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
         } 
         @top-right {
 			font-family: "Typer Pro Mono";
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
+            padding-right:  .275in;
         }
 
     }
@@ -110,7 +115,7 @@ img {
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
 
         } 
 
@@ -121,7 +126,7 @@ img {
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: bottom;
-            padding-bottom:  0;
+            padding-bottom:  .18in;
         }
 
     }
@@ -132,7 +137,7 @@ img {
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: top;
-            padding-top:  0;
+            padding-top:  .18in;
 
         } 
 
@@ -143,7 +148,8 @@ img {
 			letter-spacing: -.0425em;
             content: counter(page);
             vertical-align: top;
-            padding-top:  0;
+            padding-top:  .18in;
+            padding-right:  .275in;
         }
 
     }
@@ -156,19 +162,26 @@ img {
 			letter-spacing: -.0425em;
             content: "";
             vertical-align: bottom;
+            padding-bottom:  .18in;
         } 
         @top-right {
 			font-family: "Typer Pro Mono";
 			letter-spacing: -.0425em;
             content: "";
             vertical-align: bottom;
+            padding-bottom:  .18in;
+            padding-right:  .275in;
         }
 
     }
 
 
 @page cover {
-	background: #D5EBBD;
+	/*background: #D5EBBD;*/
+        margin-top: .44in;
+	margin-bottom: .9in;
+	margin-inside: .77in;
+	margin-outside:  .94in;
 }
 
 
@@ -208,16 +221,16 @@ img {
 
 .title_story_author {
 	text-transform: uppercase;
-	font-size: 8pt;
+	font-size: 7pt;
 	float: right;
-	margin-top: .45em;
+	margin-top: .05in;
 }
 
 .title_story {
 	display:  inline-block;
 	width: 100%;
 	margin-top:  0;
-	margin-bottom:  0;
+	margin-bottom:  .02em;
 }
 
 .title_story_page {
@@ -244,9 +257,9 @@ img {
 .title_story_subhead {
 	font-style: italic;
 	margin-top:  0;
-	margin-bottom:  0;
+	margin-bottom:  .03in;
 	padding-left:  .5in;
-	font-size: 10pt;
+	font-size: 9pt;
 }
 
 .title_story_subhead em {
@@ -296,17 +309,17 @@ img {
 .title_caps {
 	text-transform: uppercase;
 	text-align: center;
-	font-size:  9pt;
-	margin-top: .4em;
-	margin-bottom:  .2em;
+	font-size:  8pt;
+	margin-top: .7em;
+	margin-bottom:  .3em;
 }
 
 .title_caps_small {
 	text-transform: uppercase;
 	text-align: center;
 	font-size:  6pt;
-	margin-top: .2em;
-	margin-bottom:  .2em;
+	margin-top: .3em;
+	margin-bottom:  .3em;
 }
 
 .title_section_top {
@@ -333,6 +346,7 @@ img {
 	border-top-style:  double;
 	border-top-width:  5px;
 	border-bottom:  black 2px solid;
+	margin-top:  .3in;
 	line-height:  8pt;
 }
 
@@ -346,7 +360,7 @@ img {
 	/*border:  1px solid red;*/
 	width: 90%;
 	display:  inline-block;
-	font-size: 8pt;
+	font-size: 7pt;
 	text-align:  justify;
 	text-align-last: justify;
 }
@@ -421,7 +435,7 @@ h2.subhead {
 	text-align:  center;
 	font-style:  italic;
 	font-family: "Times New Roman";
-	font-size:  9pt;
+	font-size:  8pt;
 	margin:  0;
 }
 
@@ -429,13 +443,13 @@ h2.subhead {
 .illustrated_right {
 	font-style:  italic;
 	font-family: "Times New Roman";
-	font-size:  6pt;
+	font-size:  8pt;
 	margin:  0;
 	position:  relative;
 	font-weight:  normal;
 	word-spacing: 25px;
-	top: -.125in;
-	left:  4in;
+	/*top: -.125in;*/
+	left:  4.2in;
 }
 
 .alignbottom {
@@ -465,7 +479,7 @@ h2.subhead {
 	font-family: "Times New Roman";
 	text-align:  center;
 	font-size:  12pt;
-	margin-top:  5em;
+	margin-top:  .25in;
 }
 
 
@@ -480,7 +494,7 @@ h2.subhead {
 
 .fen_wer>.author {
 	font-family: "Bodoni MT Std";
-	font-size: 32pt;
+	font-size: 28pt;
 	margin-bottom: .75in;
 }
 
@@ -494,16 +508,16 @@ h2.subhead {
 .doomsroad h1.title {
 	margin-top: 1in;
 	font-family: "Hadriano Stone Cut";
-	letter-spacing:  .1em;
-	font-size: 32pt;
+	letter-spacing:  .25em;
+	font-size: 24pt;
 	margin-bottom: .75in;
 }
 
 .doomsroad .author {
 	font-family: "Archive American Shadow";
-	font-size: 20pt;
-	margin-bottom: 1in;
-	letter-spacing:  .1em;
+	font-size: 18pt;
+	margin-bottom: 1.2in;
+	letter-spacing:  .2em;
 }
 
 .doomsroad .subhead {
@@ -512,7 +526,7 @@ h2.subhead {
 	font-weight:  normal;
 	line-height:  1.2em;
 	letter-spacing:  .03em;
-	margin-bottom: 1in;
+	margin-bottom: 1.2in;
 }
 
 div.rainbowcities{
@@ -527,7 +541,7 @@ div.rainbowcities{
 	display: block;
 	width: 100%;
 	text-align: left;
-	margin-top: .2in;
+	margin-top: 0in;
 	line-height:  1em;
 	font-family: "Delphian";
 	letter-spacing:  .1em;
@@ -539,8 +553,8 @@ div.rainbowcities{
 .rainbowcity .author {
 	font-family: "Archive American Shadow";
 	font-size: 16pt;
-	margin-bottom: .75in;
-	letter-spacing:  .1em;
+	margin-bottom: .6in;
+	letter-spacing:  .15em;
 }
 
 .rainbowcity .subhead {
@@ -569,7 +583,7 @@ div.rainbow_city_postscript {
 	font-family: "LTC Hadriano";
 	/*font-face:  "Regular";*/
 	width: 100%;
-	font-size: 21pt;
+	font-size: 24pt;
 	text-align:  left;
 	line-height:  1.2em;
 	letter-spacing:  .03em;
@@ -578,7 +592,7 @@ div.rainbow_city_postscript {
 
 .mrhodgett .author {
 	font-family: "Hadriano Stone Cut";
-	font-size: 21pt;
+	font-size: 24pt;
 	margin-bottom: .1in;
 	letter-spacing:  .03em;
 	text-transform:  uppercase;
@@ -619,6 +633,12 @@ div.innsmouth_content {
 	letter-spacing:  .02em;
 }
 
+
+.innsmouth h1.title {
+	font-family: "Goudy Text MT Std";
+	letter-spacing:  .1em;
+}
+
 .innsmouth .author {
 	font-family: "Goudy Text MT Std";
 	text-transform:  none;
@@ -629,16 +649,16 @@ div.innsmouth_content {
 
 .innsmouth_content p {
   	font-family: "Times New Roman";
-	font-size: 11pt;
+	font-size: 10pt;
 	white-space: pre;
 	margin-bottom: 2em;
 	letter-spacing:  .07em;
-	line-height:  1.3em;
+	line-height:  1.5em;
 }
 
 
 .innsmouth_content p.stanza::first-letter {
-  	font-family: "Times New Roman";
+  	font-family: "Goudy Text MT Std";
 	font-size: 18pt;
 }
 
@@ -712,7 +732,7 @@ div.house_of_shadows_postscript {
 .tallterriblewomen p {
 	margin-left: 1.4in;
 	font-family: "Times New Roman";
-	font-size: 10pt;
+	font-size: 9pt;
 	line-height:  1.4em;
 	letter-spacing:  .05em;
 }
@@ -784,14 +804,15 @@ div.house_of_shadows_postscript {
 
 .oculus .author {
 	font-family: "Bodoni MT Std";
-	font-size: 14pt;
+	text-transform:  none;
+	font-size: 22pt;
 	margin-bottom: .1in;
 	letter-spacing:  .1em;
 }
 
 .oculus .subhead {
 	font-family: "Bodoni MT Std";
-	font-size: 14pt;
+	font-size: 12pt;
 	font-weight:  normal;
 	line-height:  1.2em;
 	letter-spacing:  .03em;
